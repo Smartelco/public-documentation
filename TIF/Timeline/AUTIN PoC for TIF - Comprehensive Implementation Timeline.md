@@ -7,7 +7,7 @@ gantt
     title AUTIN Phase 1: Alarm Suppression & Correlation Implementation
     dateFormat  YYYY-MM-DD
     axisFormat  %d-%b
-    todayMarker off
+    todayMarker on
 
     section Goal & Preparation
     AUTIN Capability Demonstration Planning      :active, prep1, 2025-04-17, 3d
