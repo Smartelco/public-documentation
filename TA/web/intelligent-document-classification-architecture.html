@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Document Processing System - Detailed High Level Flow</title>
 
     <!-- Primary Meta Tags -->
@@ -478,6 +478,151 @@
         .theme-button.active {
             background-color: #28a745;
         }
+
+         /* Mobile Responsive Updates */
+    @media (max-width: 768px) {
+        body {
+            padding: 10px;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0;
+            border-radius: 10px;
+        }
+
+        .header {
+            padding: 20px 15px;
+        }
+
+        .header h1 {
+            font-size: 1.8em;
+        }
+
+        .header p {
+            font-size: 1em;
+        }
+
+        .flow-container {
+            padding: 20px 15px;
+        }
+
+        .flow-step {
+            flex-direction: column;
+            padding: 20px 15px;
+            margin-bottom: 30px;
+        }
+
+        .step-number {
+            margin: 0 auto 15px auto;
+            width: 50px;
+            height: 50px;
+            font-size: 1.2em;
+        }
+
+        .step-content {
+            text-align: center;
+        }
+
+        .step-title {
+            font-size: 1.3em;
+        }
+
+        .step-description {
+            font-size: 1em;
+        }
+
+        .mini-flow {
+            padding: 15px;
+        }
+
+        .mini-flow-steps {
+            justify-content: center;
+        }
+
+        .code-example {
+            font-size: 0.8em;
+            padding: 10px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+        }
+
+        .input-output {
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .step-details {
+            justify-content: center;
+        }
+
+        /* Technology Stack section */
+        [style*="grid-template-columns"] {
+            grid-template-columns: 1fr !important;
+        }
+
+        /* Prompt sections */
+        .prompt-example {
+            padding: 15px;
+            font-size: 0.85em;
+        }
+
+        /* Code container adjustments */
+        .code-container {
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .code-example {
+            font-size: 12px;
+        }
+
+        /* Theme buttons */
+        .theme-button {
+            padding: 6px 12px;
+            font-size: 11px;
+            margin-bottom: 5px;
+        }
+
+        /* Arrow adjustments */
+        .arrow {
+            border-left-width: 10px;
+            border-right-width: 10px;
+            border-top-width: 10px;
+        }
+    }
+
+    /* Small mobile devices */
+    @media (max-width: 480px) {
+        .header h1 {
+            font-size: 1.5em;
+        }
+
+        .step-title {
+            font-size: 1.2em;
+        }
+
+        .mini-flow-steps {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .mini-step {
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        .mini-arrow {
+            transform: rotate(90deg);
+            margin: 5px 0;
+        }
+
+        .detail-tag {
+            width: 100%;
+            text-align: center;
+            margin: 5px 0;
+        }
+    }
     </style>
 </head>
 <body>
