@@ -257,6 +257,7 @@ graph LR
 ### Entity Relationship Diagram (ERD)
 
 **Access full interactive ERD at:** <https://dbdocs.io/aditira.jamhuri/Smart-Score-Golf?view=relationships>
+- Password: 123456
 
 **DBML Schema:**
 
